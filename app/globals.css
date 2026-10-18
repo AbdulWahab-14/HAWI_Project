@@ -24,3 +24,10 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.fc { --fc-border-color: #e5e7eb; --fc-today-bg-color: #eff6ff; font-size: 0.9rem; }
+.fc .fc-button-primary { background: #2563eb; border-color: #2563eb; text-transform: capitalize; }
+.fc .fc-button-primary:hover { background: #1d4ed8; border-color: #1d4ed8; }
+.fc .fc-button-primary:disabled { background: #93c5fd; border-color: #93c5fd; }
+.fc .fc-toolbar-title { font-size: 1.15rem; font-weight: 700; }
+.fc-event { cursor: pointer; }
