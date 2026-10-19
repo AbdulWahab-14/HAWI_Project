@@ -6,6 +6,7 @@ import Nav from "@/components/Nav";
 
 const TYPES = ["Restaurant / Cafe", "Fashion / Clothing", "Beauty / Salon", "Retail / Shop", "Tech / Startup", "Education", "Fitness", "Creator / Personal brand", "Other"];
 const TONES = ["Professional", "Friendly", "Playful", "Luxury", "Bold", "Inspirational"];
+const LANGS: [string, string][] = [["en", "English"], ["ur", "Urdu (اردو)"], ["rur", "Roman Urdu"], ["ar", "Arabic (العربية)"], ["hi", "Hindi (हिन्दी)"]];
 
 export default function BrandPage() {
   const user = useUser();
@@ -14,6 +15,9 @@ export default function BrandPage() {
   const [tone, setTone] = useState(TONES[1]);
   const [primary, setPrimary] = useState("#2563eb");
   const [secondary, setSecondary] = useState("#ffffff");
+  const [offer, setOffer] = useState("");
+  const [postLang, setPostLang] = useState("en");
+  const [capLang, setCapLang] = useState("en");
   const [saved, setSaved] = useState(false);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
@@ -27,6 +31,9 @@ export default function BrandPage() {
       setTone(data.tone ?? TONES[1]);
       setPrimary(data.primary_color ?? "#2563eb");
       setSecondary(data.secondary_color ?? "#ffffff");
+      setOffer(data.offerings ?? "");
+      setPostLang(data.post_lang ?? "en");
+      setCapLang(data.caption_lang ?? "en");
     });
   }, [user]);
 
@@ -42,6 +49,9 @@ export default function BrandPage() {
       tone,
       primary_color: primary,
       secondary_color: secondary,
+      offerings: offer,
+      post_lang: postLang,
+      caption_lang: capLang,
       updated_at: new Date().toISOString(),
     });
     setBusy(false);
@@ -75,7 +85,25 @@ export default function BrandPage() {
               </button>
             ))}
           </div>
+          <label className="text-sm font-medium">What do you sell?</label>
+          <textarea value={offer} onChange={(e) => setOffer(e.target.value)} rows={2}
+            placeholder="e.g. Desi food, fast food and BBQ: karahi, biryani, burgers, tikka"
+            className="mb-4 mt-1 w-full rounded-lg border p-3" />
 
+          <div className="mb-4 grid grid-cols-2 gap-3">
+            <div>
+              <label className="text-sm font-medium">Post text language</label>
+              <select value={postLang} onChange={(e) => setPostLang(e.target.value)} className="mt-1 w-full rounded-lg border bg-white p-3">
+                {LANGS.map(([k, v]) => <option key={k} value={k}>{v}</option>)}
+              </select>
+            </div>
+            <div>
+              <label className="text-sm font-medium">Caption language</label>
+              <select value={capLang} onChange={(e) => setCapLang(e.target.value)} className="mt-1 w-full rounded-lg border bg-white p-3">
+                {LANGS.map(([k, v]) => <option key={k} value={k}>{v}</option>)}
+              </select>
+            </div>
+          </div>
           <div className="mb-5 flex gap-6">
             <div>
               <label className="text-sm font-medium">Main color</label>
