@@ -143,7 +143,7 @@ Replace the placeholders with your images (store them in `docs/screenshots/`).
 | Abdul Wahab | Team Lead and Full-Stack Developer | Project planning and architecture, Next.js app setup, Supabase database and auth, Vercel deployment and cron job |
 | Hussain Afroz Khan | AI and Prompt Engineer | Prompt design, Groq and Gemini integration, fallback and key rotation, respectful mode, editing actions |
 | Ibrahim Navid | Frontend and UI/UX Designer | UI design, brand profile page, calendar, Instagram-style preview, approval popup |
-| Aliyan | Image Design and Integrations Developer | Canvas image generator, colour themes, Urdu text rendering, Instagram publishing, testing and demo |
+| Muhammad Aliyan | Image Design and Integrations Developer | Canvas image generator, colour themes, Urdu text rendering, Instagram publishing, testing and demo |
 
 ## 11. Current status, limitations and roadmap
 
