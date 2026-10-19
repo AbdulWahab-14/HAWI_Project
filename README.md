@@ -138,12 +138,12 @@ Replace the placeholders with your images (store them in `docs/screenshots/`).
 
 ## 10. Team member contributions
 
-| Member | Role | Contributions |
+| Member | Role | Main contributions |
 |---|---|---|
-| Member 1 (name) | Team Lead and Full-Stack Developer | Planned the architecture and project scope. Built the Next.js app (App Router, TypeScript, Tailwind CSS), the Supabase integration (database schema, Row Level Security, Auth, Storage), and the Vercel deployment with the daily auto-draft cron job. Coordinated the team and merged the final build. |
-| Member 2 (name) | AI and Prompt Engineer | Designed the context-rich prompts and the structured JSON output (`post_text`, `caption`, `hashtags`). Built the Groq and Gemini provider layer with key rotation, rate-limit cooldown, model fallback and retries. Implemented the respectful-mode occasion classifier, the server-side guardrails (word limits, hashtag cleanup) and the editing actions (regenerate, longer, shorter, edit with AI). |
-| Member 3 (name) | Frontend and UI/UX Designer | Designed the interface and user flow: login and signup, the brand profile page with live preview, the calendar (FullCalendar month grid and "Next 30 days") and the Instagram-style post preview. Built the approval and confirmation popup and made the app responsive. |
-| Member 4 (name) | Image Design and Integrations Developer | Built the procedural canvas image generator: the 16 colour themes with automatic selection by occasion, the seeded random motifs behind the Shuffle button, headline auto-sizing, text-position control and right-to-left Urdu rendering. Set up the Meta developer app and the Instagram API publishing flow (media container, then publish). Handled testing, documentation and demo preparation. |
+| Member 1 (name) | Team Lead and Full-Stack Developer | Project planning and architecture, Next.js app setup, Supabase database and auth, Vercel deployment and cron job |
+| Member 2 (name) | AI and Prompt Engineer | Prompt design, Groq and Gemini integration, fallback and key rotation, respectful mode, editing actions |
+| Member 3 (name) | Frontend and UI/UX Designer | UI design, brand profile page, calendar, Instagram-style preview, approval popup |
+| Member 4 (name) | Image Design and Integrations Developer | Canvas image generator, colour themes, Urdu text rendering, Instagram publishing, testing and demo |
 
 ## 11. Current status, limitations and roadmap
 
