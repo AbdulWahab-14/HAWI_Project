@@ -140,8 +140,10 @@ Replace the placeholders with your images (store them in `docs/screenshots/`).
 
 | Member | Role | Contributions |
 |---|---|---|
-| (name) | (role) | (what this person built or did) |
-| (name) | (role) | (what this person built or did) |
+| Member 1 (name) | Team Lead and Full-Stack Developer | Planned the architecture and project scope. Built the Next.js app (App Router, TypeScript, Tailwind CSS), the Supabase integration (database schema, Row Level Security, Auth, Storage), and the Vercel deployment with the daily auto-draft cron job. Coordinated the team and merged the final build. |
+| Member 2 (name) | AI and Prompt Engineer | Designed the context-rich prompts and the structured JSON output (`post_text`, `caption`, `hashtags`). Built the Groq and Gemini provider layer with key rotation, rate-limit cooldown, model fallback and retries. Implemented the respectful-mode occasion classifier, the server-side guardrails (word limits, hashtag cleanup) and the editing actions (regenerate, longer, shorter, edit with AI). |
+| Member 3 (name) | Frontend and UI/UX Designer | Designed the interface and user flow: login and signup, the brand profile page with live preview, the calendar (FullCalendar month grid and "Next 30 days") and the Instagram-style post preview. Built the approval and confirmation popup and made the app responsive. |
+| Member 4 (name) | Image Design and Integrations Developer | Built the procedural canvas image generator: the 16 colour themes with automatic selection by occasion, the seeded random motifs behind the Shuffle button, headline auto-sizing, text-position control and right-to-left Urdu rendering. Set up the Meta developer app and the Instagram API publishing flow (media container, then publish). Handled testing, documentation and demo preparation. |
 
 ## 11. Current status, limitations and roadmap
 
@@ -179,49 +181,3 @@ Replace the placeholders with your images (store them in `docs/screenshots/`).
 
 
 
-
-
-
-
-
-
-
-
-
-
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
